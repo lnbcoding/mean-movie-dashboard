@@ -1,0 +1,27 @@
+extends layout
+
+// block content
+
+.container
+    .search-bg
+        h1= title
+        .popular-movies-home
+            p. Top Movies
+            p. Vote Average
+            p. Vote Count
+
+    .search-box
+        form(action='/movie/search', method='get')
+            label Movie Title
+            |
+            input(type='text', name='title', placeholder='A Beautiful Mind')
+            |
+            label Year
+            |
+            input(type='text', name='year', placeholder='2001')
+            |
+            button Search for Movie
+
+      |
+      .popular-movies-link
+        a(href='/movies/popular') See the 15 Most Popular Movies
