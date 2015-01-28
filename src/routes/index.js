@@ -2,10 +2,9 @@ var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-    res.render('search', {
-        title: 'Da Mean Movie Dashboard'
-    });
+
+router.get('/', function(req, res) {
+    res.redirect('/movies');
 });
 
 router.get('/movies', function(req, res) {
