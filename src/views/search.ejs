@@ -2,7 +2,13 @@
 
   <div class="search-bg">
     <h1>Da Movie Dashboard</h1>
-
+      <% @top_movies.each_with_index do |item, index| %>
+        <div class="popular-movies-home">
+            <p><%= @top_movies[index]['title'] %></p>
+            <p>Vote Average: <%= @top_movies[index]['vote_average'] %></p>
+            <p>Vote Count: <%= @top_movies[index]['vote_count'] %></p>
+        </div>
+      <% end %>
   </div>
 
   <div class="search-box">

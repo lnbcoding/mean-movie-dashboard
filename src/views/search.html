@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/stylesheets/normalize.css">
+        <link rel="stylesheet" href="/stylesheets/style.css">
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="/javascripts/global.js"></script>
+
+        <title>Da Mean</title>
+    </head>
+
+    <body>
+        <div class="container">
+
+          <div class="search-bg">
+            <h1>Da Movie Dashboard</h1>
+            <!-- NEED THE ANGULAR LOGIC -->
+            <!-- top_movies each w index do |item, index| -->
+            <!-- div class .popular-movies-home -->
+            <!-- top_movies -->
+            <!-- top_movies each with index do item, index -->
+            <!-- top_movies[index][title] -->
+            <!-- top_movies[index][vote_average] -->
+            <!-- top_movies[index][vote_count] -->
+          </div>
+
+          <div class="search-box">
+            <form action="/movie/search" method="get">
+              <label>Movie Title</label>
+              <input type="text" name="title" placeholder="A Beautiful Mind" />
+              <label>Year</label>
+              <input type="text" name="year" placeholder="2001" />
+              <button>Search for Movie</button>
+            </form>
+          </div>
+
+          <div class="popular-movies-link">
+            <a href="/movies/popular">See the 15 Most Popular Movies</a>
+          </div>
+
+        </div>
+    </body>
+
+</html>
+
+
