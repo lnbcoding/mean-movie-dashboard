@@ -11,25 +11,31 @@
 
   </head>
   <body>
-      <div class="container">
+
+      <div class="container" ng-controller="myFactoryCtrl">
 
         <div class="search-bg">
           <h1>Da Movie Dashboard</h1>
         </div>
 
-          <div class="search-box" ng-controller="myFactoryCtrl">
+          <div class="search-box">
             Enter a Movie: <input type="text" ng-model="data.movie" placeholder="A Beautiful Mind" ng-change="updateMovie()">
             Enter a Year: <input type="text" ng-model="data.year" placeholder="2001" ng-change="updateMovie()">
             <button ng-click="submitMovie()">Search for Movie</button>
 
-            <div class="movie-info" ng-repeat="(key, value) in data.movieData">
+          </div>
 
+          <div class="movie-bg">
+            <div class="movie-info" ng-repeat="(key, value) in data.movieData">
               <li>{{ key + ": " + value }}</li>
             </div>
+            <!-- <img ng-src="key === "Poster"" /> -->
           </div>
 
         </div>
+
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular.min.js"></script>
     <script src="/javascripts/factory.js"></script>
   </body>
+
 </html>
