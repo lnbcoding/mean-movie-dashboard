@@ -7,7 +7,7 @@ router.get('/', function(req, res) {
 });
 
 router.get('/movies', function(req, res) {
-    res.render('search.html', {
+    res.render('simpler_search.html', {
         title: "Da Mean Movie Dashboard"
     });
 });
