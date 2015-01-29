@@ -1,6 +1,5 @@
 var app = angular.module('myApp', []);
 
-/*---------FACTORY EXAMPLE--------*/
 app.controller('myFactoryCtrl', function($scope, myFactory) {
     $scope.data = {};
 
@@ -54,4 +53,3 @@ app.factory('myFactory', function($http, $q) {
 
     return service;
 });
-/*---------END FACTORY EXAMPLE--------*/
