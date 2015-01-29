@@ -18,9 +18,11 @@
 
           <div class="search-box" ng-controller="myFactoryCtrl">
             Enter a Movie: <input type="text" ng-model="data.movie" placeholder="A Beautiful Mind" ng-change="updateMovie()">
+            Enter a Year: <input type="text" ng-model="data.year" placeholder="2001" ng-change="updateMovie()">
             <button ng-click="submitMovie()">Search for Movie</button>
 
             <div class="movie-info" ng-repeat="(key, value) in data.movieData">
+
               <li>{{ key + ": " + value }}</li>
             </div>
           </div>
