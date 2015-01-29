@@ -27,8 +27,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 
-// Setting the favicon icon
-app.use(favicon(path.join(__dirname,'public','images','favicon.ico'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -61,5 +59,7 @@ app.use(function(err, req, res, next) {
     });
 });
 
+// Setting the favicon icon
+app.use(favicon(__dirname + '/public/images/favicon.ico'));
 
 module.exports = app;

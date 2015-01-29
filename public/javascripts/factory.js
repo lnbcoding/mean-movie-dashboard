@@ -10,7 +10,7 @@ app.controller('myFactoryCtrl', function($scope, myFactory) {
     $scope.submitMovie = function() {
         myFactory.callIomdb()
             .then(function(data) {
-              $scope.data.movieData = data;
+                $scope.data.movieData = data;
             }, function(data) {
                 alert(data);
             })
