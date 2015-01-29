@@ -4,9 +4,6 @@ var app = angular.module('myApp', []);
 app.controller('myFactoryCtrl', function($scope, myFactory) {
     $scope.data = {};
 
-    // this.info = data.movieData;
-
-
     $scope.updateMovie = function() {
         myFactory.setMovie($scope.data.movie);
     };
