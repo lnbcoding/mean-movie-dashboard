@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+
+    <link href='https://fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/stylesheets/normalize.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+
+    <title>Da Mean</title>
+
+  </head>
+  <body>
+      <div class="container">
+
+        <div class="search-bg">
+          <h1>Da Movie Dashboard</h1>
+        </div>
+
+          <div class="search-box" ng-controller="myFactoryCtrl">
+            Enter a Movie: <input type="text" ng-model="data.movie" placeholder="A Beautiful Mind" ng-change="updateMovie()">
+            Enter a Year: <input type="text" ng-model="data.year" placeholder="2001" ng-change="updateMovie()">
+            <button ng-click="submitMovie()">Search for Movie</button>
+
+            <div class="movie-info" ng-repeat="(key, value) in data.movieData">
+
+              <li>{{ key + ": " + value }}</li>
+            </div>
+          </div>
+
+        </div>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.15/angular.min.js"></script>
+    <script src="/javascripts/factory.js"></script>
+  </body>
+</html>
