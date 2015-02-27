@@ -17,6 +17,7 @@ app.controller('myFactoryCtrl', function($scope, myFactory) {
     };
 });
 
+// Create a Factory in Angular to make the API calls
 app.factory('myFactory', function($http, $q) {
     var service = {};
     var baseUrl = 'http://www.omdbapi.com/?t=';
